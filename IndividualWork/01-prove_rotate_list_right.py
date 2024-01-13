@@ -10,7 +10,7 @@ GitHub repository, unshared Google Drive folder) is acceptable.
 
 def rotate_list_right(data, amount):
     
-    result = [(data[i + amount % len(data)]) for i in range(len(data))]
+    result = [(data[(i - amount) % len(data)]) for i in range(len(data))]
 
     return result
 
