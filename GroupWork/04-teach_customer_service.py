@@ -94,6 +94,11 @@ class Customer_Service:
 print("Test 1")
 
 # Defect(s) Found: 
+try:
+    Customer_Service.add_new_customer(Customer_Service.Customer())
+    print("Oops ... This shouldn't have worked.")
+except IndexError:
+    print("I got the exception as expected.")
 
 print("=================")
 
