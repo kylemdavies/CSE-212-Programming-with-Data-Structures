@@ -23,7 +23,7 @@ class Queue:
         """
         Add an item to the queue
         """
-        self.queue.insert(0, value)
+        self.queue.append(value)
 
     def dequeue(self):
         """
@@ -177,7 +177,7 @@ print("=================")
 print("Test 3")
 players = Taking_Turns_Queue()
 players.add_person("Bob", 2)
-players.add_person("Tim", 0)
+players.add_person("Tim", 100)
 players.add_person("Sue", 3)
 #print(players)
 for i in range(10):
